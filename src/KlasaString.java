@@ -4,7 +4,8 @@ String neki;
 	
 	
 	public int duzinaStringa() {
-		return 0;
+		int duzina=neki.length();
+		return duzina;
 	}
 	
 	public void karakteriNaParnim() {
