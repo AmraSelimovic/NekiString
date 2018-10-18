@@ -11,7 +11,15 @@ String neki;
 		
 	}
 	
-	public void karakteriNaNeparnim() {
+	public void karakteriNaNeparnim( String neki) {
+		String karakteri = "";
+		for (int i = 0; i < neki.length(); i ++) {
+			char slovo = neki.charAt(i);
+			if (Character.isLetter(slovo) && (i%2 != 0)) {
+				karakteri += slovo;
+			}
+		}
+			
 		
 	}
 	
