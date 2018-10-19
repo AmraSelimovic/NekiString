@@ -1,7 +1,13 @@
 
 public class KlasaString {
 String neki;
+	NekiString (){
+		
+	}
 	
+	NekiString( String novi ){
+		neki=novi;
+	}
 	
 	public int duzinaStringa() {
 		int duzina=neki.length();
