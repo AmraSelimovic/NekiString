@@ -9,8 +9,6 @@ String neki;
 	}
 	
 	public void karakteriNaParnim() {
-		
-		
 		for(int i=0;i<neki.length();i++) {
 			if(i%2==0 && neki.charAt(i)!=' ') {
 				System.out.println(neki.charAt(i));
@@ -26,8 +24,6 @@ String neki;
 				karakteri += slovo;
 			}
 		}
-			
-		
 	}
 	
 	public int brojUppercase(String neki) {
@@ -42,10 +38,19 @@ String neki;
 	}
 	
 	public int brojLowercase() {
-		return 0;
+		int brojac=0;
+		for(int i=0; i<neki.length(); i++) {
+			if(Character.isLowerCase(neki.charAt(i))) {
+				brojac++;
+			}
+		}
+		return brojac;
 	}
 	
 	public void nisuSlova() {
+		for(int i=0; i<neki.length(); i++) {
+			if(Character.isLetter(neki.charAt(i))==false && neki.charAt(i)!=' ') 
+				System.out.print(neki.charAt(i));
 			
 		
 	}
