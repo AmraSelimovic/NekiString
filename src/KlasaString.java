@@ -9,7 +9,11 @@ String neki;
 	}
 	
 	public void karakteriNaParnim() {
-		
+		for(int i=0;i<neki.length();i++) {
+			if(i%2==0 && neki.charAt(i)!=' ') {
+				System.out.println(neki.charAt(i));
+				}
+			}
 	}
 	
 	public void karakteriNaNeparnim() {
